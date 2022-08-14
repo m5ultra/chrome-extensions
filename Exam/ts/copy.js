@@ -29,7 +29,7 @@ window.onload = () => {
 	//解除复制粘贴限制
 	window.oncopy =
 		window.onpaste =
-		document.oncopy =
+  document.oncopy =
 		document.onpaste =
 		document.body.oncopy =
 		document.body.onpaste =
@@ -37,8 +37,10 @@ window.onload = () => {
 		onpaste =
 			null
 
-	console.log('禁止切屏幕已经关闭.')
-
+	console.log('禁止切屏幕已经关闭')
+	setInterval(() => {
+		console.log('禁止切屏幕已经关闭')
+	}, 1000 * 3)
 	// 这里是获取background 中的变量
 	// chrome.storage.sync.get('color', ({ color }) => {
 	//   document.body.style.backgroundColor = color
